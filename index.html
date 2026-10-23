@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniyal Poster Studio | Place an Order</title>
+  <meta name="description" content="Tell Daniyal Poster Studio what you'd like made. Request a custom product quote.">
+  <style>
+    :root { --navy:#14213d; --blue:#2563eb; --light:#f4f7fb; --ink:#172033; --muted:#64748b; --line:#dbe3ef; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--light); line-height:1.55; }
+    header { background:linear-gradient(135deg,#101b32,#233c66); color:white; padding:22px max(20px,calc((100% - 1080px)/2)); }
+    .brand { font-weight:800; font-size:1.15rem; letter-spacing:.2px; }
+    .hero { max-width:1080px; margin:auto; padding:60px 22px 52px; color:white; }
+    .hero h1 { font-size:clamp(2.2rem,6vw,4rem); line-height:1.06; margin:0 0 18px; max-width:760px; }
+    .hero p { font-size:1.1rem; max-width:620px; color:#e4ecfb; margin:0 0 26px; }
+    .hero a { display:inline-block; background:#fff; color:#172033; padding:13px 21px; border-radius:10px; font-weight:800; text-decoration:none; }
+    .hero-wrap { background:linear-gradient(135deg,#101b32,#233c66); }
+    main { max-width:1080px; padding:0 22px 50px; margin:auto; }
+    .section { margin:30px 0; }
+    .section h2 { font-size:1.7rem; margin:0 0 8px; }
+    .intro { color:var(--muted); margin-top:0; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:15px; margin-top:20px; }
+    .feature { background:white; padding:20px; border:1px solid var(--line); border-radius:14px; }
+    .feature .emoji { font-size:1.6rem; }
+    .feature h3 { margin:8px 0 5px; }
+    .feature p { color:var(--muted); margin:0; font-size:.95rem; }
+    .order-card { background:white; border:1px solid var(--line); border-radius:18px; padding:clamp(18px,4vw,32px); box-shadow:0 12px 32px rgba(20,33,61,.06); }
+    form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:17px; }
+    .field { display:flex; flex-direction:column; gap:7px; }
+    .wide { grid-column:1/-1; }
+    label { font-weight:700; font-size:.95rem; }
+    input,select,textarea { width:100%; font:inherit; padding:12px 13px; border:1px solid #cbd5e1; border-radius:9px; background:#fff; color:var(--ink); }
+    textarea { min-height:110px; resize:vertical; }
+    input:focus,select:focus,textarea:focus { outline:3px solid #bfdbfe; border-color:var(--blue); }
+    .hint { font-size:.82rem; color:var(--muted); margin-top:-3px; }
+    button { border:0; background:var(--blue); color:white; border-radius:10px; padding:14px 18px; font:inherit; font-weight:800; cursor:pointer; }
+    button:hover { background:#1d4ed8; }
+    .notice { background:#eff6ff; border:1px solid #bfdbfe; padding:13px 15px; border-radius:10px; font-size:.92rem; color:#1e3a8a; }
+    .contact { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .contact a { color:var(--blue); font-weight:700; }
+    footer { text-align:center; padding:24px 18px; color:#cbd5e1; background:#101b32; font-size:.9rem; }
+    @media(max-width:640px) { form { grid-template-columns:1fr; } .wide { grid-column:auto; } .hero { padding-top:44px; } }
+  </style>
+</head>
+<body>
+  <header><div class="brand">Daniyal Poster Studio</div></header>
+  <div class="hero-wrap">
+    <section class="hero">
+      <h1>Your idea.<br>Our poster design.</h1>
+      <p>Need a poster for your business, school project, event or social media? Tell us your idea, share the text and style you want, and request a custom poster.</p>
+      <a href="#order">Place an Order ↓</a>
+    </section>
+  </div>
+  <main>
+    <section class="section">
+      <h2>How it works</h2>
+      <p class="intro">Ordering a custom poster is simple.</p>
+      <div class="features">
+        <article class="feature"><div class="emoji">💡</div><h3>1. Share your idea</h3><p>Tell us the poster's purpose, message and style.</p></article>
+        <article class="feature"><div class="emoji">💬</div><h3>2. Confirm details</h3><p>We'll confirm the poster size, design, price and delivery time.</p></article>
+        <article class="feature"><div class="emoji">📦</div><h3>3. Get your order</h3><p>Once the design details are agreed, we'll confirm the next steps.</p></article>
+      </div>
+    </section>
+    <section class="section" id="order">
+      <h2>Place an Order</h2>
+      <p class="intro">Fill in the details below. Fields marked * are required.</p>
+      <div class="order-card">
+        <div class="notice">This starter form opens your email app with the order details. Before publishing, connect a form service if you'd like orders collected automatically online.</div>
+        <form id="orderForm">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Enter your name"></div>
+          <div class="field"><label for="phone">Phone / WhatsApp number *</label><input id="phone" name="phone" required type="tel" placeholder="+92..."></div>
+          <div class="field"><label for="type">Poster type *</label><select id="type" name="type" required><option value="">Choose a poster type</option><option>Business advertisement</option><option>School / project poster</option><option>Event poster</option><option>Birthday / celebration poster</option><option>Social media poster</option><option>Other poster</option></select></div>
+          <div class="field"><label for="size">Poster size</label><select id="size" name="size"><option>Not sure yet</option><option>A4</option><option>A3</option><option>Square social post</option><option>Story / vertical social post</option><option>Custom size</option></select></div>
+          <div class="field wide"><label for="details">Poster instructions *</label><textarea id="details" name="details" required placeholder="What text should appear? What colours, style, theme or details do you want?"></textarea></div>
+          <div class="field"><label for="quantity">Quantity</label><input id="quantity" name="quantity" type="number" min="1" placeholder="How many?"></div>
+          <div class="field"><label for="budget">Approximate budget (PKR)</label><input id="budget" name="budget" placeholder="e.g. 1500"></div>
+          <div class="field"><label for="date">When do you need it?</label><input id="date" name="date" type="date"></div>
+          <div class="field"><label for="contact">Preferred way to contact you</label><select id="contact" name="contact"><option>WhatsApp</option><option>Phone call</option><option>Email</option></select></div>
+          <div class="field wide"><label for="reference">Reference image or design (optional)</label><input id="reference" name="reference" type="file" accept="image/*"><span class="hint">The image won't be attached automatically by this starter page. You can share it separately when we contact you.</span></div>
+          <div class="field wide"><label for="extra">Anything else? (optional)</label><textarea id="extra" name="extra" placeholder="Delivery area, extra instructions, etc."></textarea></div>
+          <div class="field wide"><button type="submit">Prepare My Order</button></div>
+        </form>
+        <p id="result" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Questions?</h2>
+      <p class="intro">After you publish the site, add your business email or WhatsApp link here so customers can contact you.</p>
+      <div class="contact"><span>📱 WhatsApp / Phone:</span><a href="https://wa.me/923132181979" target="_blank" rel="noopener">Chat with us on WhatsApp</a><span>Phone: 03132181979</span></div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Daniyal Poster Studio · Custom posters designed with care</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const lines = [
+        'CUSTOM POSTER ORDER',
+        'Name: ' + f.get('name'),
+        'Phone / WhatsApp: ' + f.get('phone'),
+        'Poster type: ' + f.get('type'),
+        'Poster size: ' + f.get('size'),
+        'Instructions: ' + f.get('details'),
+        'Quantity: ' + (f.get('quantity') || 'Not specified'),
+        'Budget (PKR): ' + (f.get('budget') || 'Not specified'),
+        'Required date: ' + (f.get('date') || 'Not specified'),
+        'Preferred contact: ' + f.get('contact'),
+        'Extra instructions: ' + (f.get('extra') || 'None'),
+        '',
+        'Please contact me to confirm poster price and details.'
+      ];
+      const subject = encodeURIComponent('New custom poster order');
+      const body = encodeURIComponent(lines.join('\n'));
+      document.getElementById('result').textContent = 'Your email app should open with the order details. If it does not, please contact the business directly. This form is not yet sending orders to a central inbox.';
+      window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
